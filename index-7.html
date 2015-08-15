@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>busca</title>
+<meta charset="utf-8">
+<meta name="description" content="Description goes here">
+<meta name="keywords" content="Keywords goes here">     
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/preview.css" type="text/css">
+<script type="text/javascript" src="js/main.js"></script>
+
+<!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;z-index:100;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+    </div>
+<![endif]-->
+
+</head>
+<body>
+	<div id="wrapper">
+		<section style="min-height:601px;">
+			<div class="dynamicContent" style="min-height:601px;">
+        <!--content -->
+				<div class="box" style="min-height:601px;">
+
+          <h1>busca</h1>
+
+          <div class="col2 divider">
+            
+            <h3>média dos gastos dos programas 
+                de uma natureza ordenados cronologicamente 
+                em uma programa</h3>
+
+            <form id="ajax-contact-form" action="consulta_elab1.php" style="height:430px;">
+                <h1>Natureza:</h1>
+                <input type="text" name="natureza" style="width: 230px;">
+                <div class="clear"></div>
+                <h1>Programa:</h1>
+                <input type="text" name="descricao" style="width: 230px;">
+                <div class="clear"></div>
+                
+                <input class="submit" type="submit" name="busca_submit" value="procurar">
+            </form>
+
+
+
+          </div>
+          <div class="col3">
+            
+            <h2>Resultado</h2>
+            
+            <div id="conteudo_inicial"><h3>Nenhuma pesquisa foi executada</h3></div>
+            <div id="conteudo_busca"></div>
+            <div id="paginacao" style="width:400px;">
+                
+                <input style="visibility:hidden; width:120px; height:40px; float: left;" type="button" id="anterior" class="button1" value="Anterior">
+                <input style="visibility:hidden; width:120px; height:40px; float: right;" type="button" id="proximo" class="button1" value="Próximo">
+
+        <!--content end -->
+			</div>
+		</section>
+	</div>
+        <script type="text/javascript" src="js/consulta_elab1_form.js"></script>
+  <script>
+    $("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'dark',social_tools:false,allow_resize: true,default_width: 500,default_height: 344});   
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import "http://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+#tabela {
+  margin: 1em 0;
+  min-width: 300px;
+}
+#tabela tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#tabela th {
+  display: none;
+  text-align: center;
+}
+#tabela td {
+  display: block;
+  text-align: justify;
+}
+#tabela td:first-child {
+  padding-top: .5em;
+}
+#tabela td:last-child {
+  padding-bottom: .5em;
+}
+#tabela td:before {
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  #tabela td:before {
+    display: none;
+  }
+}
+#tabela th, #tabela td {
+  text-align: center;
+}
+@media (min-width: 480px) {
+  #tabela th, #tabela td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  #tabela th:first-child, #tabela td:first-child {
+    padding-left: 0;
+  }
+  #tabela th:last-child, #tabela td:last-child {
+    padding-right: 0;
+  }
+}
+
+#tabela{
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+#tabela tr {
+  border-color: #46627f;
+}
+#tabela th, #tabela td {
+  margin: .5em 1em;
+}
+
+@media (min-width: 480px) {
+  #tabela th, #tabela td {
+    padding: 1em;
+  }
+}
+#tabela th, #tabela td:before {
+  color: #dd5;
+}
